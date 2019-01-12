@@ -1,0 +1,27 @@
+---
+title: {{ cookiecutter.full_title }}"
+output: html_document
+---
+
+
+```{r setup, include=F}
+library(data.table)#
+knitr::opts_knit$set(root.dir = '../..')
+knitr::opts_chunk$set(fig.width=12, fig.height=6)
+knitr::opts_chunk$set(warning = F, message = F)
+```
+
+
+```{r load_data, include = F}
+d= fread('data/processed/{{ cookiecutter.short_title }}.csv')
+```
+
+## Introduction
+
+This is the motivation behind this analysis
+
+## Section 1
+
+```{r section1, echo = F}
+
+```
